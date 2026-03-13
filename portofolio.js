@@ -1,5 +1,5 @@
 const phrases = [
-    "Frontend Develeppeur",
+    "Frontend Developer",
     "Designer",
     "Web Developpeur"
 ]
@@ -60,5 +60,5 @@ function Ecriture(){
 }
 
 window.addEventListener('load', () => {
-            Ecriture();
-        })
+    Ecriture();
+});
