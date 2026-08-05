@@ -61,7 +61,7 @@ header{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(Image_portofolio/back_sky.jpg) no-repeat;
+    /*background: url(Image_portofolio/back_sky.jp) no-repeat;*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -366,6 +366,48 @@ section{
     width: 90%;
 }
 
+.progress-line.css span{
+    width: 50%;
+}
+
+.progress-line.javascript span{
+    width: 20%;
+}
+
+.progress-line.python span{
+    width: 15%;
+}
+
+.progress-line.react span{
+    width: 2%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -20px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+
+
+@keyframes showText {
+    50%{
+        opacity: 0.4;
+    }
+    70%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 @keyframes sliderRight {
     0%{
