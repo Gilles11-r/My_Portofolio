@@ -212,7 +212,7 @@ header{
     margin-bottom: 4rem;
 }
 
-#serrvices{
+#services{
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
@@ -244,7 +244,7 @@ header{
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
-    font-weight: 13px;
+    /*font-weight: 13px;*/
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
@@ -303,8 +303,8 @@ section{
 
 .container1{
     width: 600px;
-    height: 500Px;
-    padding: 74px 90px;
+    height: 500px;
+    padding: 75px 90px;
     margin-left: 120px
 }
 
@@ -317,7 +317,7 @@ section{
 }
 
 .bar{
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .Technical-bars .bar{
@@ -405,7 +405,7 @@ section{
 .progress-line.javascript span::after{
     content: "20%";
 }
-.progress-line.progress-line.python span::after{
+.progress-line.python span::after{
     content: "15%";
 }
 .progress-line.react span::after{
@@ -428,6 +428,9 @@ section{
 
 
 @keyframes showText {
+    50%{
+        opacity: 0.5;
+    }
     100%{
         opacity: 1;
     }
@@ -442,7 +445,7 @@ section{
 }
 .radial-bars .radial-bar{
     width: 50%;
-    height: 120px;
+    height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -459,12 +462,12 @@ section{
     stroke-width: 10;
     stop-color: black;
     fill: transparent;
-    stroke-dasharray: 50%;
-    stroke-dashoffset: 50%;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
 }
-@keyframes animate-bar {
+@keyframes animate-bar{
     100%{
         stroke-dashoffset: -1;
     }
@@ -473,38 +476,45 @@ section{
     stroke-width: 10;
     stroke: #fff;
     fill: transparent;
-    stroke-dasharray: 50%;
-    stroke-dashoffset: 50%;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
     stroke-linecap: round;
 }
-.path-1(animation: animate-path1 1s 1s linear forwards;)
-.path-2(animation: animate-path2 1s 1s linear forwards;)
-.path-3(animation: animate-path3 1s 1s linear forwards;)
-.path-4(animation: animate-path4 1s 1s linear forwards;)
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 50;;
     }
 }
 @keyframes animate-path2 {
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 175;;
     }
 }
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 125;;
     }
 }
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 75;;
     }
 }
 
 .radial-bar .percentage{
-    position: absolute;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
 }
 
 @keyframes sliderRight {
