@@ -244,8 +244,6 @@ header{
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
-    /*font-weight: 13px;*/
-    border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
@@ -460,7 +458,7 @@ section{
 }
 .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
-    stop-color: black;
+    stroke: black;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -472,6 +470,7 @@ section{
         stroke-dashoffset: -1;
     }
 }
+
 .path{
     stroke-width: 10;
     stroke: #fff;
@@ -507,11 +506,24 @@ section{
 }
 
 .radial-bar .percentage{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 75px;
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
