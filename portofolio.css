@@ -408,6 +408,7 @@ section{
 }
 .progress-line.react span::after{
     content: "2%";
+    margin-bottom: 20px;
 }
 .progress-line span::before {
     content:'';
