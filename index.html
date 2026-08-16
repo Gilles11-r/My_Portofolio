@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <link rel="stylesheet" href="portofolio.css" />
+    <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#home" class="logo">Portfolio</a>
 
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skills</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <div class="home-img">
                 <img src="Image_portofolio/GilEpl.jpg" alt="Mytof">
@@ -111,7 +112,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bar"><i style="color: #147fbb;" class="fa-brands fa-css"></i>
+                <div class="bar"><i style="color: #147fbb;" class="fa-brands fa-css3-alt"></i>
                     <div class="info">
                         <span>CSS</span>
                     </div>
@@ -233,8 +234,43 @@
         </div>
     </section>
 
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work Together</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit 
+                amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="contact-list">
+                    <li><a href="tel:+22890000000"> <i class="fa-solid fa-phone"></i> +228 90 00 00 00</a></li>
+                    <li><a href="mailto:gilleshedeka@gmail.com"><i class="fa-solid fa-envelope"></i> gilleshedeka@gmail.com</a></li>
+                    <li><a href="https://www.google.com/maps/place/Lome,+Togo" target="_blank"><i class="fa-solid fa-location-dot"></i> Lome, Togo</a></li>
+                </div>
+                <div class="contact-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+        </div>
 
-    <script type="text/javascript" src="portofolio.js"></script>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name" class="box" required>
+                <input type="email" placeholder="Your Email" class="box" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="send">
+            </form>
+        </div>
+
+    </section>
+
+    <div class="last-text">
+        <p>Copyright © 2024 <span>HEDEKA Gilles-Prosper</span>. All Rights Reserved</p>
+    </div>
+    <a href="#home" class="top"><i class="bx bx-vp-arrow-alt"></i></a>
+
+
+    <script type="text/javascript" src="portfolio.js"></script>
 
 </body>
 </html>

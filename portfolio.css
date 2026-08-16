@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
 
@@ -617,4 +618,199 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.layer i{
+    color: #ff004f;
+    font-size: 20px;
+    margin-top: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.2);
+}
+.row:hover .layer{
+    height: 100%;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+.contact-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color: #0ef;
+}
+.contact-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+}
+.contact-text h4 span{
+    color: #0ef;
+}
+.contact-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 2rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: all .40s ease;
+}
+.contact-list li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.03) translateY(-5px);
+    color: #0ef;
+}
+
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 15px 30px 0;
+    transition: .40s ease;
+    opacity: 0;
+    animation: sliderLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.contact-icons i:hover {
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form{
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form .send{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 60px;
+    font-size: 16px;
+    color: #001b29;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+       0 0 25px #0ef;
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 10px cyan,
+    0 0 25px cyan, 0 0 50px cyan;
+}
+
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 25px 0;
+    background: rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+}
+
+.top{
+    
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background: #0ef;
+    color: #001b29;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.contact-form form input{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form form textarea{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
