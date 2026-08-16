@@ -156,6 +156,7 @@ header{
 .btn-box {
     display: inline-block;
     padding: 12px 20px;
+    margin: 10px 15px;
     background: #0ef;
     border-radius: 50px;
     font-size: 16px;
@@ -164,6 +165,7 @@ header{
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
+    transition: .40s ease;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
@@ -172,8 +174,7 @@ header{
 
 .btn-box:hover{
     box-shadow: 0 0 10px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+    0 0 25px cyan, 0 0 50px cyan;
 }
 
 .about{
@@ -280,6 +281,7 @@ header{
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
+    transition: .40s ease;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
@@ -287,8 +289,7 @@ header{
 }
 .read:hover {
     box-shadow: 0 0 10px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+    0 0 25px cyan, 0 0 50px cyan;
 }
 .services-list div:hover{
     transform: translateY(-10px);
@@ -738,8 +739,7 @@ section{
     width: 100%;
     padding: 20px;
     background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(20px);
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .contact-form form{
@@ -757,8 +757,9 @@ section{
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
+    transition: .40s ease;
     animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: calc(.2s * var(--i));
     box-shadow: 0 0 5px #0ef,
        0 0 25px #0ef;
 }
@@ -779,26 +780,33 @@ section{
 }
 
 .top{
-    
     position: fixed;
     right: 30px;
     bottom: 30px;
     width: 50px;
     height: 50px;
-    background: #0ef;
-    color: #001b29;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    color: #0ef;
     font-size: 25px;
     text-align: center;
     line-height: 50px;
+    border: 1px solid rgba(0, 238, 255, 0.55);
     border-radius: 50%;
+    transition: .40s ease;
+    box-shadow: 0 0 10px cyan;
     z-index: 1000;
+}
+.top:hover{
+    box-shadow: 0 0 10px cyan,
+    0 0 25px cyan;
 }
 .contact-form form input{
     width: 100%;
     padding: 10px;
     background: transparent;
     border: 2px solid #0ef;
-    border-radius: 5px;
+    border-radius: 20px;
     color: #fff;
     font-size: 16px;
     margin-bottom: 20px;
@@ -809,7 +817,7 @@ section{
     padding: 10px;
     background: transparent;
     border: 2px solid #0ef;
-    border-radius: 5px;
+    border-radius: 20px;
     color: #fff;
     font-size: 16px;
     margin-bottom: 20px;
