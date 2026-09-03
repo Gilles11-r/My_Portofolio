@@ -62,3 +62,30 @@ function Ecriture(){
 window.addEventListener('load', () => {
     Ecriture();
 });
+
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x');
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Fermer le menu après le clic sur un lien
+        navbar.classList.remove('active');
+        menuIcon.classList.remove('bx-x');
+    });
+});
